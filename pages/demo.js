@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 
-export default function Demo() {
+const Demo = () => {
   const [items, setItems] = useState([]);
   const [newItemName, setNewItemName] = useState('');
 
@@ -63,3 +63,5 @@ export default function Demo() {
     </div>
   );
 }
+
+export default Demo

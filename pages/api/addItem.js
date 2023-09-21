@@ -1,5 +1,6 @@
 let items = [];
-export default function handler(req, res) {
+
+const handler = (req, res) => {
   if (req.method === 'POST') {
     console.log('Request Body', req.body)
     const data = JSON.stringify(req.body);
@@ -14,3 +15,5 @@ export default function handler(req, res) {
     res.status(405).end(); 
   }
 }
+
+export default handler

@@ -5,7 +5,7 @@ let items = [
   { id: 3, name: 'Item 3' },
 ];
 
-export default function handler(req, res) {
+const handler = (req, res) => {
   if (req.method === 'GET') {
     
     res.status(200).json(items);
@@ -24,3 +24,5 @@ export default function handler(req, res) {
     res.status(405).end();
   }
 }
+
+export default handler
