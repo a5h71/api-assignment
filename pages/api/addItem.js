@@ -1,8 +1,8 @@
-
+let items = [];
 export default function handler(req, res) {
   if (req.method === 'POST') {
-    
-    const data = JSON.parse;
+    console.log('Request Body', req.body)
+    const data = JSON.stringify(req.body);
 
    
     const newItem = { id: Date.now(), name: data.name };
